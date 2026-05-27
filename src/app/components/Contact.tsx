@@ -183,7 +183,7 @@ export default function Contact() {
 
                         {/* Phone */}
                         <a
-                            href="tel:+977-9840725591"
+                            href="tel:"
                             className="flex flex-col items-center gap-2 p-4 bg-[#161B26] border border-[#38BDF8]/10 hover:border-[#38BDF8]/40 hover:bg-[#161B26]/80 rounded-xl transition-all duration-300 group"
                         >
                             <svg className="w-5 h-5 text-[#38BDF8] group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
