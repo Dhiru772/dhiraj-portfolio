@@ -5,13 +5,13 @@ import { z } from 'zod';
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
-  project: z.string().min(10, 'Project description must be at least 10 characters'),
+  project: z.string().min(5, 'Message must be at least 5 characters'),
 });
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    
+
     // Validate inputs using Zod
     const result = contactSchema.safeParse(body);
     if (!result.success) {
@@ -20,14 +20,14 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-    
+
     const { name, email, project } = result.data;
-    
+
     // Save to the database
     const savedMessage = await prisma.contactMessage.create({
       data: { name, email, project },
     });
-    
+
     // Optional: Send email notification via Resend if API key is provided
     if (process.env.RESEND_API_KEY) {
       try {
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
         console.error('Error sending email notification via Resend:', err);
       }
     }
-    
+
     return NextResponse.json(
       { message: 'Message sent successfully!', data: savedMessage },
       { status: 200 }

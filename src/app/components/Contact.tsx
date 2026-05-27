@@ -141,7 +141,7 @@ export default function Contact() {
                                 disabled={status.submitting}
                                 rows={5}
                                 className="w-full bg-[#0B0F19]/50 border border-[#38BDF8]/20 text-[#F9FAFB] px-4 py-3 rounded-lg focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] focus:outline-none transition resize-none disabled:opacity-50"
-                                placeholder="Tell me about your project or internship opportunity (minimum 10 characters)..."
+                                placeholder="Tell me about your project or internship opportunity (minimum 5 characters)..."
                             ></textarea>
                         </div>
 
