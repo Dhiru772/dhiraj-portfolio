@@ -14,3 +14,14 @@ model ContactMessage {
   project   String
   createdAt DateTime @default(now())
 }
+
+model BlogComment {
+  id        String   @id @default(uuid())
+  slug      String   @db.Text
+  name      String
+  email     String
+  message   String   @db.Text
+  createdAt DateTime @default(now())
+
+  @@index([slug])
+}

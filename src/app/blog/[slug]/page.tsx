@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getBlogPostBySlug, getAllBlogPosts } from '@/lib/blogs';
+import CommentSection from '@/app/components/CommentSection';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -126,6 +127,9 @@ export default async function BlogPostPage({ params }: PageProps) {
           className="blog-content prose prose-invert max-w-none"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
+
+        {/* Comment Section */}
+        <CommentSection slug={slug} />
       </article>
     </div>
   );
