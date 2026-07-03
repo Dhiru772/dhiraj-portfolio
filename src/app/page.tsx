@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import BlogPreview from './components/BlogPreview';
 import Timeline from './components/Timeline';
+import OtherStuffs from './components/OtherStuffs/OtherStuffs';
 import Contact from './components/Contact';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Projects />
         <BlogPreview />
         <Timeline />
+        <OtherStuffs />
         <Contact />
       </main>
 
