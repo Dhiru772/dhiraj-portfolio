@@ -16,13 +16,14 @@ export default function Hero() {
 
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-5xl font-bold text-[#F9FAFB] leading-tight">
-                        Building robust web applications from structured database architectures to polished interfaces.
+                        Hungry for new things and always cooking something.
                     </h1>
 
                     {/* Subtext */}
-                    <p className="text-lg text-[#9CA3AF] leading-relaxed">
-                        BCA Scholar specializing in full-stack fundamentals, relational database logic, and algorithmic problem-solving.
-                    </p>
+                    <div className="text-lg text-[#9CA3AF] leading-relaxed space-y-3">
+                        <p>Web dev is one of my biggest hobbies — turning ideas into real shit.</p>
+                        <p className="italic text-[#A8B8C4]">BCA Scholar specializing in full-stack fundamentals, relational database logic, and algorithmic problem-solving.</p>
+                    </div>
 
                     {/* CTAs */}
                     <div className="flex gap-4 pt-4">

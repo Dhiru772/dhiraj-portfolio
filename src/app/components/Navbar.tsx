@@ -21,6 +21,7 @@ export default function Navbar() {
                 <div className="hidden md:flex gap-8 text-sm text-[#9CA3AF]">
                     <a href="#about" className="hover:text-[#38BDF8] transition">About</a>
                     <a href="#projects" className="hover:text-[#38BDF8] transition">Projects</a>
+                    <Link href="/projects" className="hover:text-[#38BDF8] transition">All Projects</Link>
                     <a href="#skills" className="hover:text-[#38BDF8] transition">Skills</a>
                     <Link href="/blog" className="hover:text-[#38BDF8] transition">Blog</Link>
                     <a href="#contact" className="hover:text-[#38BDF8] transition">Contact</a>
@@ -49,6 +50,7 @@ export default function Navbar() {
                         <div className="flex flex-col gap-4 p-6 text-sm text-[#9CA3AF]">
                             <a href="#about" onClick={() => setIsOpen(false)}>About</a>
                             <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
+                            <Link href="/projects" onClick={() => setIsOpen(false)}>All Projects</Link>
                             <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
                             <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
                             <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>

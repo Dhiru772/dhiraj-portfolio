@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import BlogPreview from './components/BlogPreview';
 import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 
@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <Hero />
         <Projects />
-        <Skills />
+        <BlogPreview />
         <Timeline />
         <Contact />
       </main>

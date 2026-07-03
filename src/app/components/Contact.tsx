@@ -65,9 +65,9 @@ export default function Contact() {
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-[#F9FAFB] mb-4">
-                        Let's build something efficient.
+                        Wanna cook something together?
                     </h2>
-                    <p className="text-[#9CA3AF]">Have a project in mind? Let's connect.</p>
+                    <p className="text-[#9CA3AF]">Got an idea, suggestion, or any questions</p>
                 </div>
 
                 {/* Contact Card */}
@@ -130,7 +130,7 @@ export default function Contact() {
                         {/* Project Details Field */}
                         <div>
                             <label htmlFor="project" className="block text-xs font-mono text-[#9CA3AF] mb-2 tracking-wider">
-                                PROJECT / OPPORTUNITY DETAILS
+                                TELL ME ABOUT
                             </label>
                             <textarea
                                 id="project"
@@ -141,7 +141,7 @@ export default function Contact() {
                                 disabled={status.submitting}
                                 rows={5}
                                 className="w-full bg-[#0B0F19]/50 border border-[#38BDF8]/20 text-[#F9FAFB] px-4 py-3 rounded-lg focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] focus:outline-none transition resize-none disabled:opacity-50"
-                                placeholder="Tell me about your project or internship opportunity (minimum 5 characters)..."
+                                placeholder="Anything..."
                             ></textarea>
                         </div>
 
